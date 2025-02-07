@@ -1,0 +1,55 @@
+<div class="container3">
+    <!-- <img src="../../assets/img/Back1.jpg" > -->
+    <!-- <img src="assets/img/Back1.webp" > -->
+    <div class="login-box" *ngIf="loginBool">
+        <h1>LOGIN</h1>
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="Email" [(ngModel)]="email" name="email" />
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" [(ngModel)]="password" name="password" />
+            </div>
+            <div class="options">
+                <label class="textNormal">
+                    <input type="checkbox" />
+                    Remember me
+                </label>
+                <a href="#" class="textDetail1">Forgot password</a>
+            </div>
+            <button type="submit" class="btn-login" >LOGIN</button>
+            <p class="register  textNormal">
+                Don’t have an account?
+                <!-- <a (click)="changeLoginBool(false)">REGISTER</a> -->
+                <u class="textDetail1" (click)="changeLoginBool(false)" >REGISTER</u>
+            </p>
+        </form>
+    </div>
+    <div class="login-box" *ngIf="!loginBool">
+        <h1>REGISTER</h1>
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="Email" [(ngModel)]="email" name="email" />
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" [(ngModel)]="password" name="password" />
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Username" [(ngModel)]="username" name="username" />
+            </div>
+            <!-- <div class="options">
+                <label>
+                    <input type="checkbox" />
+                    Remember me
+                </label>
+                <a href="#" class="forgot-password">Forgot password</a>
+            </div> -->
+            <button type="submit" class="btn-login">Register</button>
+            <p class="register textNormal">
+                Already have an account?
+                <!-- <a href="#" (click)="changeLoginBool(true)">LOGIN</a> -->
+                <u class="textDetail1" (click)="changeLoginBool(true)">LOGIN</u>
+            </p>
+        </form>
+    </div>
+</div>

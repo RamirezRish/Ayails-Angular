@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --prm: #3f51b5;
+    --prmL: #c5cae9;
+    --prmD: #303f9f;
+
+    --textL: white;
+    --textD: #212121;
+
+    --text-sec: #757575;
+    --text-thr: #dbdbdb;
+
+
+    --div: #BDBDBD;
+    --acc: #9e9e9e;
+
+}

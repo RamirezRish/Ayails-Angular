@@ -10,5 +10,10 @@ export const routes: Routes = [
         path:'login',
         loadChildren:() =>
             import('./login/login.module').then(m => m.LoginModule)
+    },
+    {
+        path:'dev-build',
+        loadChildren:() =>
+            import('./developer-build/developer-build.module').then(m => m.DeveloperBuildModule)
     }
 ];

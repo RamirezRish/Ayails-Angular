@@ -1,0 +1,44 @@
+<div class="container13">
+    <h2>Product Backlog</h2>
+    <div class="subcontainer">
+        <div class="goals">
+            <div class="inputGoal">
+                <input type="text" placeholder="Add goal">
+                <input type="button" value="+">
+            </div>
+            <div class="goalsList">
+                <div *ngFor="let goal of goalsList">
+                    <span></span>
+                    <p>{{goal}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="tasks">
+            <h3>Tasks</h3>
+            <div class="createTask">
+                <div class="fields">
+                    <input type="text" placeholder="Title">
+                    <input type="text" placeholder="Description">
+                    <input type="text" placeholder="Acceptance criteria">
+                    <input type="text" placeholder="Dependency">
+                    <input type="text" placeholder="History Points">
+                    <input type="text" placeholder="Spring assigned">
+                    <input type="text" placeholder="Priority">
+                    <!-- <input class="addTask" type="button" value="+"> -->
+                    <div class="addTask">+</div>
+                </div>
+                <div class="taskList">
+                    <div class="task" *ngFor="let task of tasksList">
+                        <span></span>
+                        <p>{{task.title}}</p>
+                        <!-- <p>{{task.date_creation}}</p>
+                        <p>{{task.time_limit | date : 'dd'}}/{{task.time_limit | date : 'MM'}}/{{task.time_limit | date : 'YY'}}</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input class="create" type="button" value="Create">
+
+</div>

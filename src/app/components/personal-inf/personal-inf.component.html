@@ -1,0 +1,32 @@
+<div class="container11">
+    <h3 class="ttl">Complete personal information</h3>
+    <div class="fields">
+        <form action="">
+            <div class="name">
+                <p>What is your name?</p>
+                <input type="text">
+            </div>
+            <div class="lastname">
+                <p>What is your lastname?</p>
+                <input type="text" >
+            </div>
+            <div class="roleConteiner">
+                <p>Define your role</p>
+                <div>
+                    <span *ngFor="let role of roles, let i = index" >
+                        <p>{{role}}</p>
+                        <hr *ngIf="roles.length != i + 1" >
+                    </span>
+                </div>
+                <!-- <select name="" id="" class="role">
+                    <option value="Developer">Developer</option>
+                    <option value="Scrum Master">Scrum Master</option>
+                    <option value="Product Owner">Product Owner</option>
+                </select> -->
+            </div>
+            <div class="submit">
+                <input type="button"  value="Add">
+            </div>
+        </form>
+    </div>
+</div>

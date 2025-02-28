@@ -1,0 +1,143 @@
+
+.container15{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.column{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    // border: solid blue 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    h3 {
+        font-size: 1.7rem;
+    }
+}
+
+.subcontainer{
+    position: relative;
+    width:50%;
+    height: auto;
+    max-height: 50%;
+    border: solid gray 1px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.inputCode{
+    border: solid gray 1px;
+    margin-top: 1rem;
+    // height: 2rem;
+    width: 100%;
+
+    > input{
+        position: relative;
+        top: -5px;
+        left: 3px;
+        height: 100%;
+        width: 90%;
+        background: none;
+        border: none;
+    }
+    > span{
+        height: 2rem;
+        width: 2rem;
+        background-color: white;
+    }
+}
+
+.create{
+    position: relative;
+    width: 70%;
+
+    .form{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 10%;
+        gap: 1rem;
+
+        > .subcolumn{
+            position: relative;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            width: 50%;
+
+            > *{
+                // margin: 1rem 0;
+                // position: relative;
+                // left: 0;
+                width: 100%;
+            }
+        }
+        > .left > *{
+            margin: 1rem 0;
+            position: relative;
+            height: 1.5rem;
+            width: 100%;
+            border: gray solid 1px;
+
+            > p,input{
+                width: calc(100% - 3rem);
+            }
+            > span{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 3rem;
+                height: 1.5rem;
+                background-color: white;
+                border: solid 1px gray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        > .right{
+            .subtitle{
+                font-weight: 700;
+                font-size: 1.3rem;
+            }
+            .membersContainer{
+                display: absolute;
+                top: 3.5rem;
+                right: 0;
+                width: 90%;
+                max-height: calc(100% - 3.5rem);
+                border: gray solid 1px;
+
+                overflow-y: auto;
+            }
+        }
+    }
+}
+// .input{
+//     position: relative;
+//     width: 100%;
+//     height: 1.3rem;
+//     border: rgb(217, 0, 0) solid 1px;
+//     border: .6rem;
+
+// }
+.subcolumn input{
+    background: none;
+    border: none;
+}
+
+

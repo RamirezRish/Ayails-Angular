@@ -1,1 +1,45 @@
-<p>create-team works!</p>
+<!-- <p>create-team works!</p> -->
+<div class="container15">
+    <div class="column">
+        <h3 *ngIf="ttlDisplay">Join a Team</h3>
+        <div class="subcontainer">
+            <h3>Join a Team</h3>
+            <div class="inputCode">
+                <input type="text" placeholder="Enter code">
+                <span class="send">></span>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <h3 *ngIf="ttlDisplay">Create a Team</h3>
+        <div class="subcontainer create">
+            <h3>Create a Team</h3>
+            <div class="form">
+
+                <div class="subcolumn left">
+                    <input type="text" placeholder="Team title">
+                    <div class="input">
+                        <input type="text" placeholder="Member username / email">
+                        <span>></span>
+                    </div>
+                    <div class="input">
+                        <!-- <input type="text" placeholder="Member username / email"> -->
+                        <p>codee</p>
+                        <span>Copy</span>
+                    </div>
+                </div>
+
+                <div class="subcolumn right" *ngIf="'s'">
+                    <p class="subtitle">Members</p>
+                    <div class="membersContainer">
+                        <div class="member" *ngFor="let member of members">
+                            <p class="name">{{member.name}}</p>
+                            <p class="description">{{member.description}}</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

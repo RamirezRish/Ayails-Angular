@@ -17,14 +17,14 @@
             <div class="form">
 
                 <div class="subcolumn left">
-                    <input type="text" placeholder="Team title">
+                    <input type="text" placeholder="Team title" [(ngModel)]="teamTitle">
                     <div class="input">
-                        <input type="text" placeholder="Member username / email">
-                        <span>></span>
+                        <input type="text" placeholder="Member username / email" [(ngModel)]="currentEmail">
+                        <span (click)="addMember()">></span>
                     </div>
                     <div class="input">
                         <!-- <input type="text" placeholder="Member username / email"> -->
-                        <p>codee</p>
+                        <p>{{joinCode}}</p>
                         <span>Copy</span>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-                
+                <input type="button" class="btn" value="Create" (click)="createTeam()">
             </div>
         </div>
     </div>

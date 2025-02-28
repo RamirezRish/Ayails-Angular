@@ -3,8 +3,8 @@
     <div class="subcontainer">
         <div class="goals">
             <div class="inputGoal">
-                <input type="text" placeholder="Add goal">
-                <input type="button" value="+">
+                <input type="text" placeholder="Add goal" [(ngModel)]="currentGoal">
+                <input type="button" value="+" (click)="addGoal()">
             </div>
             <div class="goalsList">
                 <div *ngFor="let goal of goalsList">
@@ -17,13 +17,13 @@
             <h3>Tasks</h3>
             <div class="createTask">
                 <div class="fields">
-                    <input type="text" placeholder="Title">
-                    <input type="text" placeholder="Description">
-                    <input type="text" placeholder="Acceptance criteria">
-                    <input type="text" placeholder="Dependency">
-                    <input type="text" placeholder="History Points">
-                    <input type="text" placeholder="Spring assigned">
-                    <input type="text" placeholder="Priority">
+                    <input type="text" placeholder="Title" [(ngModel)]="title">
+                    <input type="text" placeholder="Description" [(ngModel)]="description">
+                    <input type="text" placeholder="Acceptance criteria" [(ngModel)]="currentAccCrit">
+                    <input type="text" placeholder="Dependency" [(ngModel)]="currentDep">
+                    <input type="text" placeholder="History Points" [(ngModel)]="history_points">
+                    <input type="text" placeholder="Spring assigned" [(ngModel)]="spring_assigned">
+                    <input type="text" placeholder="Priority" [(ngModel)]="priority">
                     <!-- <input class="addTask" type="button" value="+"> -->
                     <div class="addTask">+</div>
                 </div>

@@ -3,9 +3,9 @@
         <p>Create a Project</p>
     </div>
     <div class="form">
-        <input type="text" placeholder="Project title" class="text">
-        <textarea placeholder="Description" class="text">
+        <input type="text" placeholder="Project title" class="text" [(ngModel)]="title">
+        <textarea placeholder="Description" class="text" [(ngModel)]="description">
         </textarea>
-        <input type="button" value="Create" class="btn">
+        <input type="button" value="Create" class="btn" (click)="createProject()">
     </div>
 </div>

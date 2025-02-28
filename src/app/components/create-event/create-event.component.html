@@ -13,21 +13,21 @@
                 <input type="button" value="V">
             </div>
             <div>
-                <input class="int" type="text" placeholder="Goals">
+                <input class="int" type="text" placeholder="Goals" [(ngModel)]="currentGoal" name="goal">
                 <input type="button" value="+">
             </div>
             <div>
-                <input class="int" type="text" placeholder="Format">
+                <input class="int" type="text" placeholder="Format" [(ngModel)]="format" name="format">
             </div>
             <div>
-                <input class="int" type="text" placeholder="Link access">
+                <input class="int" type="text" placeholder="Link access" [(ngModel)]="access" name="access">
                 <input type="button" value="Copy">
             </div>
             <div>
                 <input class="int" type="datetime" placeholder="Date">
             </div>
             <div>
-                <input class="int" type="text" placeholder="Estimated duration">
+                <input class="int" type="text" placeholder="Estimated duration" [(ngModel)]="duration" name="duration">
             </div>
             <!-- <div class="button">
             </div> -->
